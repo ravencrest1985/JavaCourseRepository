@@ -7,17 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>Welcome to page</h2> 
+<h2>Result page</h2>
 <br>
-<form action="JobServletAdd" method="post">
-<label>Job name</label>
+<%String message=(String)request.getAttribute("message"); %>
+<%if(message!=null){ %>
+<%=message%>
+<%} %>
 <br>
-<input type="text" name="job_name" placeholder="job_name">
-<br>
-<label>Job desc</label>
-<br>
-<input type="text" name="job_desc" placeholder="job_desc">
-<input type="submit" value="submit">
-</form>
+<a href="index.jsp">return to home page</a>
 </body>
 </html>
