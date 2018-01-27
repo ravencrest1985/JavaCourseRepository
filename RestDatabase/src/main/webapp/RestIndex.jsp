@@ -6,20 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body> 
-<h2>Send message -jms 2.0</h2>
-<br>
-<form action="ReciveMessage" method="get">
-<br> 
-<label>Message</label>
-<br>
-<input type="text" placeholder="enter mail massage" name="userMessage">
-<br>
-<label>User name</label>
-<br>
-<input type="text" placeholder="enter user name" name="userName">
-<br>
+<body>
+<form action="api/FormEndpointFirst" method="post">
+<input type="text" placeholder="enter name" name="name">
+<input type="text" placeholder="enter age" name="age">
+<input type="text" placeholder="enter phone number" name="number">
 <input type="submit" value="submit">
 </form>
+
+
 </body>
 </html>
